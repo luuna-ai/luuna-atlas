@@ -1,6 +1,6 @@
 # Luuna Atlas
 
-Structured expertise and project memory. This is Luuna's maintained MIT-licensed component. The Luuna package identity is **@luuna/atlas-cli**. It is maintained in the independent public repository [brodynelly/luuna-atlas](https://github.com/brodynelly/luuna-atlas). The npm package remains private and unpublished.
+Structured expertise and project memory. This is Luuna's maintained MIT-licensed component. The Luuna package identity is **@luuna/atlas-cli**. It is maintained in [luuna-ai/luuna-atlas](https://github.com/luuna-ai/luuna-atlas). The npm package remains private and unpublished.
 
 The CLI and library behavior are implemented in Go. For development, install Go 1.27.0 and Bun 1.4.3, then run from this directory:
 
@@ -29,6 +29,6 @@ Luuna Atlas is derived from Mulch 0.11.0 by Jaymin West (MIT), https://github.co
 
 ## Maintenance and releases
 
-The repository owner and release maintainer is `brodynelly`. CI is configured to run the supported `bun run verify` surface on Linux and Windows with Go 1.27.0 and Bun 1.4.3. It checks Go formatting, builds native executable aliases, runs go vet and Go tests, then type checks the compatibility surface, validates repository instructions and runs Bun tests. Differential tests compare Go outputs and persisted state with the frozen oracle; historical internal Bun unit tests validate that reference, while public CLI/API tests exercise Go. Race detection is available separately through `bun run go:test:race` on a host with a supported C compiler.
+The repository is maintained by the luuna-ai organization. CI is configured to run the supported `bun run verify` surface on Linux and Windows with Go 1.27.0 and Bun 1.4.3. It checks Go formatting, builds native executable aliases, runs go vet and Go tests, then type checks the compatibility surface, validates repository instructions and runs Bun tests. Differential tests compare Go outputs and persisted state with the frozen oracle; historical internal Bun unit tests validate that reference, while public CLI/API tests exercise Go. Race detection is available separately through `bun run go:test:race` on a host with a supported C compiler.
 
 Registry publishing is disabled and requires no npm token. Luuna pins a reviewed commit, never a floating branch; update its submodule only after CI and the consumer smoke pass. See [MIGRATION.md](MIGRATION.md) for the verified source baseline. Dependency installation does not build executables or change Git hooks.
