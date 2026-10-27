@@ -2,7 +2,7 @@
 // and compatibility transports use the same storage and ranking implementation.
 package atlas
 
-import core "github.com/brodynelly/luuna-atlas/internal/atlas"
+import core "github.com/luuna-ai/luuna-atlas/internal/atlas"
 
 type Record = core.Record
 type Config = core.Config

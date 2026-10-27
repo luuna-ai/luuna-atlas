@@ -1,6 +1,6 @@
 # Repository extraction, October 21, 2026
 
-Maintainer and release owner: brodynelly. Destination: https://github.com/brodynelly/luuna-atlas.
+At extraction time, the maintainer was brodynelly and the initial destination was https://github.com/brodynelly/luuna-atlas. That destination is historical; the current canonical repository is https://github.com/luuna-ai/luuna-atlas.
 
 - Source: brodynelly/luuna at `fd42d59c5f608b9120d9cdc2e2354b66f945a5ed`, path `components/atlas`.
 - Component-scoped history: `git subtree split --prefix=components/atlas fd42d59c5f608b9120d9cdc2e2354b66f945a5ed` produced `9e85c58e38009e02bf0f241b1db0f562970ec03e`.
@@ -12,7 +12,7 @@ Maintainer and release owner: brodynelly. Destination: https://github.com/brodyn
 
 Visibility: public, explicitly authorized by the owner on October 21, 2026. Luuna remains private. No private authoring records or credential files are included in the extracted history.
 
-The owner requested the explicit luuna-* repository names on October 21, 2026. GitHub repository identity, history and CI are preserved by rename; the canonical destination is brodynelly/luuna-atlas.
+The owner requested the explicit luuna-* repository names on October 21, 2026. GitHub repository identity, history and CI are preserved by rename; the original canonical destination was brodynelly/luuna-atlas; the current canonical destination is luuna-ai/luuna-atlas.
 
 # Layout move to .luuna/, October 22, 2026
 

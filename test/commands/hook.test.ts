@@ -69,6 +69,8 @@ describe("luuna-atlas hook", () => {
 
 	beforeEach(async () => {
 		tmpDir = await mkdtemp(join(tmpdir(), "atlas-hook-test-"));
+		const initialized = spawnSync("git", ["init", "--quiet", tmpDir], { encoding: "utf8" });
+		expect(initialized.status).toBe(0);
 		await initAtlasDir(tmpDir);
 		await writeConfig({ ...DEFAULT_CONFIG, domains: { cli: {}, db: {} } }, tmpDir);
 		await mkdir(join(tmpDir, "src"), { recursive: true });
@@ -179,7 +181,8 @@ describe("luuna-atlas hook", () => {
 	});
 
 	it("findRepoRoot walks up to the .git entry", async () => {
-		await writeFile(join(tmpDir, ".git"), "gitdir: elsewhere");
+		const initialized = spawnSync("git", ["init", "--quiet", tmpDir], { encoding: "utf8" });
+		expect(initialized.status).toBe(0);
 		expect(findRepoRoot(join(tmpDir, "src"))).toBe(resolve(tmpDir));
 	});
 });

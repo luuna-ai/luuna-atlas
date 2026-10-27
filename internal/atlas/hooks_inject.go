@@ -26,7 +26,7 @@ var sessionUnsafeRE = regexp.MustCompile(`[^A-Za-z0-9_-]`)
 func FindRepoRoot(cwd string) string {
 	dir, _ := filepath.Abs(cwd)
 	for {
-		if setupExists(filepath.Join(dir, ".git")) {
+		if IsGitRepo(dir) {
 			return dir
 		}
 		parent := filepath.Dir(dir)
