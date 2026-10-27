@@ -1,6 +1,6 @@
 # Contributing to Luuna Atlas
 
-Atlas is an independent MIT-licensed Luuna component maintained by brodynelly. Read [AGENTS.md](AGENTS.md) before changing it. Provenance and the original notice are in [UPSTREAM.md](UPSTREAM.md) and [LICENSE](LICENSE).
+Atlas is an independent MIT-licensed Luuna component maintained by the luuna-ai organization. Read [AGENTS.md](AGENTS.md) before changing it. Provenance and the original notice are in [UPSTREAM.md](UPSTREAM.md) and [LICENSE](LICENSE).
 
 ## Development
 
@@ -52,4 +52,4 @@ Keep each change focused and describe the resulting behavior and meaningful vali
 
 The package remains private and unpublished. Registry publication and upstream/self-upgrade require a separate reviewed release process. Luuna consumes an exact reviewed Git commit through its submodule; runtime policy and approval enforcement belong in Luuna.
 
-Use [GitHub Issues](https://github.com/brodynelly/luuna-atlas/issues) when you choose to report a bug. Security guidance is in [SECURITY.md](SECURITY.md). Contributions retain the [MIT License](LICENSE).
+Use [GitHub Issues](https://github.com/luuna-ai/luuna-atlas/issues) when you choose to report a bug. Security guidance is in [SECURITY.md](SECURITY.md). Contributions retain the [MIT License](LICENSE).

@@ -61,11 +61,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brodynelly/luuna-atlas.git"
+    "url": "https://github.com/luuna-ai/luuna-atlas.git"
   },
-  "homepage": "https://github.com/brodynelly/luuna-atlas",
+  "homepage": "https://github.com/luuna-ai/luuna-atlas",
   "bugs": {
-    "url": "https://github.com/brodynelly/luuna-atlas/issues"
+    "url": "https://github.com/luuna-ai/luuna-atlas/issues"
   },
   "dependencies": {
     "ajv": "^8.17.1",

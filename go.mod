@@ -1,4 +1,4 @@
-module github.com/brodynelly/luuna-atlas
+module github.com/luuna-ai/luuna-atlas
 
 go 1.27.0
 

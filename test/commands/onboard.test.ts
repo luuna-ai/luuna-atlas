@@ -375,7 +375,7 @@ describe("onboard command", () => {
 	describe("legacy migration", () => {
 		const LEGACY_SNIPPET = `## Project Expertise (Atlas)
 
-This project uses [Atlas](https://github.com/brodynelly/luuna-atlas) for structured expertise management.
+This project uses [Atlas](https://github.com/luuna-ai/luuna-atlas) for structured expertise management.
 
 **At the start of every session**, run:
 \`\`\`bash

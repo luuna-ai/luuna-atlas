@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/brodynelly/luuna-atlas/internal/atlas"
+	"github.com/luuna-ai/luuna-atlas/internal/atlas"
 	"os"
 )
 
