@@ -81,6 +81,14 @@ func parityNormalize(value any, dir string, started time.Time) any {
 		v = strings.ReplaceAll(v, strings.ReplaceAll(dir, `\`, `\\`), "<PROJECT>")
 		v = strings.ReplaceAll(v, dir, "<PROJECT>")
 		v = strings.ReplaceAll(v, filepath.ToSlash(dir), "<PROJECT>")
+		// The legacy oracle resolves some hook paths relative to Go's temporary
+		// test directory instead of the project root. Compare those paths by
+		// their project-relative suffix; production Go output is already relative.
+		v = regexp.MustCompile(`Test[^/]+/\d{3}/reference/project/`).ReplaceAllString(v, "")
+		// The frozen TypeScript oracle predates the repository move. Compare
+		// generated user-facing links by canonical repository identity while
+		// leaving the oracle files and their integrity manifest untouched.
+		v = strings.ReplaceAll(v, "https://github.com/brodynelly/luuna-atlas", "https://github.com/luuna-ai/luuna-atlas")
 		if date, e := time.Parse(time.RFC3339Nano, v); e == nil && date.After(started.Add(-time.Minute)) {
 			return "<GENERATED-TIMESTAMP>"
 		}
